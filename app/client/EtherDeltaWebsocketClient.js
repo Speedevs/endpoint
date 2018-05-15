@@ -1,6 +1,6 @@
 var io = require('socket.io-client');
 
-var socket = io.connect('http://localhost:8080', {
+var socket = io.connect('https://socket.etherdelta.com', {
   transports: ['websocket'],
 });
 

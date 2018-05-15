@@ -8,13 +8,18 @@ Meteor.startup(() => {
   const server = http.createServer();
   const io = socket_io(server);
 
+  io.set('transports', ['websocket']);
+
   let counter = 0;
 
   // New client
   io.on('connection', function(socket) {
     console.log('new socket client');
-    socket.on('ferret', function (name, fn) {
-      fn('woot');
+    socket.on('getMarket', function (token, user) {
+      console.log('Server received get market request.');
+      console.log(JSON.stringify(token));
+      console.log(JSON.stringify(user));
+      socket.emit('market', 'The market');
     });
   });
 
