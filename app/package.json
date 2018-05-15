@@ -7,9 +7,17 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.42",
+    "bufferutil": "^3.0.5",
     "cpx": "^1.5.0",
-    "meteor-node-stubs": "^0.3.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "http-browserify": "^1.7.0",
+    "meteor-node-stubs": "^0.3.3",
     "path": "^0.12.7",
-    "truffle-contract": "^3.0.5"
+    "socket.io": "^2.1.0",
+    "socket.io-client": "^2.1.0",
+    "truffle-contract": "^3.0.5",
+    "truffle-hdwallet-provider": "0.0.5",
+    "utf-8-validate": "^4.0.2"
   }
 }
